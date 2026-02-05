@@ -205,3 +205,70 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ============================================================================
+# Customer Churn Prediction Project Specific
+# ============================================================================
+
+# Data files (keep directory structure but ignore contents)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+
+# Model artifacts
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/trained_models/*
+!models/trained_models/.gitkeep
+
+# Logs
+logs/
+*.log
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# Jupyter Notebook outputs
+*.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Environment variables (already covered but being explicit)
+.env
+.env.local
+.env.*.local
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Output files
+outputs/
+*.png
+*.jpg
+*.jpeg
+!docs/*.png
+!docs/*.jpg
+
+# Temporary files
+*.tmp
+*.bak
+.cache/
+
+# API and dashboard temporary files
+api/*.db
+dashboard/*.db
